@@ -43,7 +43,7 @@ $$
 
 At the specified depth $B(t)\ge u\gg_{b,\alpha}t^{2/\alpha}z^{-1/\alpha}$, so the error in (1) is $o(u)$ even at $\alpha=3/2$. The absolute contribution above height $T$ is $O_b(\log(2T)/T)$ by the unit-interval zero count. Choose $T=C'_b u^{-1}\log(2/u)$ so this is at most $u/8$. The entire contribution from $\beta\le1-(\log(1/u)+C_b)/\log z$ is at most $u/8$ in absolute value by summability of the coefficients. The remaining conjugate pairs must have a positive real contribution, proving the claim. The same argument detects a zero using $u=B(t)$ whenever $B(t)>0$ and $B(t)z^{2/3}\to\infty$, with no depth restriction.
 
-If $\Theta=\sup_{\rho_K}\Re\rho_K$, then $1/2\le\Theta\le1$ and (1) gives $|B(t)|\ll_b z^{\Theta-1}$. Comparing with the floor for $F$ excludes all sufficiently late points of depth $\alpha$ whenever $\alpha(1-\Theta)\ge1$. At equality the factor $t^2$ decides the comparison. In particular RH for both *untwisted* factors would give $F(t)\gg_b t^2 B(t)^2$ at every sufficiently late centre and would rule out $\eta\ge1$. Even with those additional hypotheses this comparison leaves $0<\eta<1$ open.
+If $\Theta=\sup_{\rho_K}\Re\rho_K$, then $1/2\le\Theta\le1$ and (1) gives $|B(t)|\ll_b z^{\Theta-1}$. Comparing with the floor for $F$ excludes all sufficiently late points of depth $\alpha$ whenever $\alpha(1-\Theta)\ge1$. At equality the factor $t^2$ decides the comparison. In particular RH for both *untwisted* factors would give $F(t)\gg_b t^2 B(t)^2$ at every sufficiently late centre and would rule out every depth $\alpha\ge2$. Even with those additional hypotheses this comparison leaves $1<\alpha<2$ open.
 
 ## Both signs of the correction in every sufficiently late multiplicative interval of fixed ratio
 
