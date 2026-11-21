@@ -20,6 +20,15 @@ def normWeight (b y : ℝ) (w : HeightOneSpectrum (𝓞 D.host.E)) : ℂ :=
   let q : ℝ := Ideal.absNorm w.asIdeal
   (Real.log q * window b (q / y) : ℝ)
 
+/-- Every tower host has degree divisible by four, so its prime ideals cannot
+be identified with those of a quadratic field by a rational algebra isomorphism. -/
+theorem no_quadratic_host (D : D7) (K : Type*) [Field K] [Algebra ℚ K]
+    (hK : Module.finrank ℚ K = 2) : ¬ Nonempty (D.host.E ≃ₐ[ℚ] K) := by
+  rintro ⟨e⟩
+  have hIso := e.toLinearEquiv.finrank_eq
+  have hHost := D.host.toHostAx.finrank_cmField
+  omega
+
 /-- If an admissible row realizes the character of the norm modulo four on
 the places in the window, the trace difference equals the signed race. -/
 theorem trace_eq_norm_race (c : Com D) (base : GlobalTheory.LFun.Fam D.host.E)
@@ -44,4 +53,5 @@ theorem trace_eq_norm_race (c : Com D) (base : GlobalTheory.LFun.Fam D.host.E)
   · by_cases h' : Ideal.absNorm w.asIdeal % 4 = 3 <;> simp [chiFour, h, h']
 
 #print axioms EisensteinPrimeRace.trace_eq_norm_race
+#print axioms EisensteinPrimeRace.no_quadratic_host
 end EisensteinPrimeRace

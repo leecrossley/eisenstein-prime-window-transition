@@ -6,14 +6,14 @@ if [[ "$(uname -s)" != Linux || "$(uname -m)" != x86_64 ]]; then
   exit 2
 fi
 repo=$(cd "$(dirname "$0")" && pwd)
-(cd "$repo" && sha256sum --check SHA256SUMS)
+(cd "$repo" && sha256sum --check SHA256SUMS) >&2
 scratch=$(mktemp -d)
 trap 'rm -rf -- "$scratch"' EXIT
 cd "$scratch"
 
 download() {
   curl --fail --location --silent --show-error --retry 4 --output "$2" "$1"
-  printf '%s  %s\n' "$3" "$2" | sha256sum --check -
+  printf '%s  %s\n' "$3" "$2" | sha256sum --check - >&2
 }
 checkout() {
   git init -q "$1"
@@ -33,6 +33,6 @@ download https://github.com/CocoSgt/riemann-hypothesis-lean/releases/download/v2
   source.tar.gz 9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc
 tar -xzf source.tar.gz
 cd mathlib4
-lake exe cache get
-lake env python3 "$scratch/trace/verify.py" "$scratch/lean/src" "$scratch/build"
+lake exe cache get >&2
+lake env python3 "$scratch/trace/verify.py" "$scratch/lean/src" "$scratch/build" >&2
 lake env python3 "$repo/check_trace.py" "$scratch/build"

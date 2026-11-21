@@ -5,4 +5,5 @@ At dilation five the limiting lower bound exceeds 0.94 times the square-root sca
 48000 Dirichlet-series terms per character bound the total zero mass below 0.49.
 Exact rational intervals and 55 trivial-zero terms confirm the transition and width-five margin.
 Lean 4.33.1 kernel replay passed for EisensteinPrimeRace.trace_eq_norm_race.
+Lean 4.33.1 kernel replay passed for EisensteinPrimeRace.no_quadratic_host.
 Reported axioms: propext, Classical.choice, Quot.sound.

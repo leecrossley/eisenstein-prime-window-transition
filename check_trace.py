@@ -27,12 +27,14 @@ def main():
         output=compiler.stdout
         if compiler.returncode:
             raise RuntimeError(output)
-        name="EisensteinPrimeRace.trace_eq_norm_race"
-        check=re.search(re.escape(name)+r"' depends on axioms:\s*\[([^\]]*)\]",output)
-        if not check or set(check[1].replace(" ","").split(","))!={"propext","Classical.choice","Quot.sound"}:
-            raise RuntimeError(output)
+        names = ("EisensteinPrimeRace.trace_eq_norm_race", "EisensteinPrimeRace.no_quadratic_host")
+        for name in names:
+            check = re.search(re.escape(name) + r"' depends on axioms:\s*\[([^\]]*)\]", output)
+            if not check or set(check[1].replace(" ", "").split(",")) != {"propext", "Classical.choice", "Quot.sound"}:
+                raise RuntimeError(output)
         subprocess.run(["leanchecker","EisensteinTrace"],env=env,check=True)
-    print("Lean 4.33.1 kernel replay passed for EisensteinPrimeRace.trace_eq_norm_race.")
+    for name in names:
+        print(f"Lean 4.33.1 kernel replay passed for {name}.")
     print("Reported axioms: propext, Classical.choice, Quot.sound.")
 
 if __name__=="__main__":
