@@ -11,7 +11,7 @@ $$
 
 A positive value is a lead for norm 3 modulo 4. These are prime ideals of the Eisenstein integers. A split rational prime supplies two ideals of norm $p$, and an inert prime supplies one of norm $p^2$ with logarithmic weight $2\log p$.
 
-Let $\chi_{12}$ be the primitive even character of discriminant $12$. It is the product of $\chi_4$ and the quadratic character of discriminant $-3$. The full prime-power series for $\chi_4\circ N$ has the two factors $L_4=L(s,\chi_4)$ and $L_{12}=L(s,\chi_{12})$, up to the excluded local factors. At a split prime the two characters agree. At an inert prime their values are opposite, so only even powers survive and carry coefficient $2\log p$. At 3 the primitive product includes the one ramified Euler factor. Removing it changes the window sum by $O_b(1)$ since only boundedly many powers of 3 fit in the window. This was the concrete character proposed in the earlier theta-trace calculation. [Theta trace and prime-ideal target](https://github.com/leecrossley/theta-prime-trace/tree/v1.0.0)
+Let $\chi_{12}$ be the primitive even character of discriminant $12$. It is the product of $\chi_4$ and the quadratic character of discriminant $-3$. The full prime-power series for $\chi_4\circ N$ has the two factors $L_4=L(s,\chi_4)$ and $L_{12}=L(s,\chi_{12})$, up to the excluded local factors. At a split prime the two characters agree. At an inert prime their values are opposite, so only even powers survive and carry coefficient $2\log p$. At 3 the primitive product includes the one ramified Euler factor. Removing it changes the window sum by $O_b(1)$ since only boundedly many powers of 3 fit in the window. This was the concrete character proposed in the earlier theta-trace calculation. [Theta trace and prime-ideal target](https://github.com/leecrossley/theta-host-split-inert-race/tree/main/results/theta-prime-trace)
 
 ## The two endpoints
 
@@ -106,7 +106,7 @@ Suzuki proves sign criteria for other weighted sums. Fiorilli and Jouve prove ev
 
 ## What the Lean proof covers
 
-The finite identity `EisensteinPrimeRace.trace_eq_norm_race` applies to primes of a tower host $E$ and uses `ThetaTransfer.theta_prime_trace_extract`. If the row character agrees with the norm character modulo four on the supplied places, the normalized difference of the consecutive Hecke traces equals the norm-1 sum minus the norm-3 sum on those places. This is the opposite sign convention to $A_b$. The row and its values are hypotheses. [Lean declarations](EisensteinTrace.lean) · [Pinned trace extraction](https://github.com/leecrossley/theta-prime-trace/blob/7a7909d2dc7bb9d8d0ec7b2dc8c78e70f93782d7/ThetaPrimeTrace.lean#L68)
+The finite identity `EisensteinPrimeRace.trace_eq_norm_race` applies to primes of a tower host $E$ and uses `ThetaTransfer.theta_prime_trace_extract`. If the row character agrees with the norm character modulo four on the supplied places, the normalized difference of the consecutive Hecke traces equals the norm-1 sum minus the norm-3 sum on those places. This is the opposite sign convention to $A_b$. The row and its values are hypotheses. [Lean declarations](EisensteinTrace.lean) · [Pinned trace extraction](https://github.com/leecrossley/theta-host-split-inert-race/blob/main/results/theta-prime-trace/ThetaPrimeTrace.lean#L68)
 
 There is a direct obstruction to using this identity for the Eisenstein field. Every `D7` host satisfies $[E:\mathbb Q]=4\thinspace\mathrm{ord}$, with $\mathrm{ord}$ a natural number. An isomorphism of rational algebras preserves degree. Since $\mathbb Q(\sqrt{-3})$ has degree two, it cannot be such a host. The declaration `EisensteinPrimeRace.no_quadratic_host` proves this obstruction for every rational field extension of degree two. Transferring a race on one field to a different host would need a theorem comparing their weighted prime ideals. The analytic argument used here works directly over the Eisenstein field. [Upstream `finrank_cmField`](https://github.com/Deicyde/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ConjEMemHostFIff.lean#L183) · [Host structure](https://github.com/Deicyde/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalRingCardinality/DataHost.lean#L39)
 
@@ -121,7 +121,7 @@ python3 -m pip install -r requirements.txt
 bash verify-release.sh
 ```
 
-On a machine with [the pinned base trace](https://github.com/leecrossley/theta-prime-trace/tree/7a7909d2dc7bb9d8d0ec7b2dc8c78e70f93782d7) already built, put the pinned Lean 4.33.1 `bin` directory on `PATH`. From this repository use
+On a machine with [the pinned base trace](https://github.com/leecrossley/theta-host-split-inert-race/tree/main/results/theta-prime-trace) already built, put the pinned Lean 4.33.1 `bin` directory on `PATH`. From this repository use
 
 ```sh
 bash verify-release.sh /absolute/path/to/pinned-mathlib4 /absolute/path/to/compiled-trace
