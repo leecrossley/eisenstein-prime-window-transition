@@ -18,7 +18,7 @@ $$
 C(s)=\tfrac12(Q_{12}(s)-Q_4(s))+O\big((1+s)^2 e^{-s/6}\big).
 $$
 
-Indeed every good square is $1\bmod12$, all higher odd powers have total log-weight $O(X^{1/3}\log^2(2X))$ through $X$, and the signed contribution of powers of 3 to $\psi(\,\cdot\,,\chi_4)$ is bounded by $\log3$. Both characters vanish at 2.
+Indeed every good square is $1\bmod12$, all higher odd powers have total log-weight $O(X^{1/3}\log^2(2X))$ through $X$, and the signed contribution of powers of 3 to $`\psi(\,\cdot\,,\chi_4)`$ is bounded by $\log3$. Both characters vanish at 2.
 
 At a tie or loss the cutoff formula gives $F(t)\ll e^{-\eta\sqrt t}$ for a fixed $\eta>0$. Take $V=e^{-\eta\sqrt t/4}$ and $H=V^{-2}$. Write
 
@@ -52,15 +52,15 @@ Most of these nearby centres themselves give strict leads. Fix a positive zero o
 
 For integers $n\to\infty$ put $v_n=e^{-\eta\sqrt n/4}$ and $D_+=\max(D,0)$. An unbounded sequence of exceptions in the blocks $[n,n+1)$ would force
 
-$$
+```math
 \limsup_{n\to\infty}\frac{1}{v_n}
    \int_{n-1}^{n+2}D_+(s,v_n)^4\,ds
    \ \ge\ 2d^4=\frac{(\log3)^4}{8}.
-$$
+```
 
 Indeed $v_n/V\to1$ on each such block. The interval about an exceptional centre in the preceding calculation has length $2(1-\epsilon)V$ and lies inside the integration range. Let $\epsilon$ decrease to zero after taking the limit. A strict upper bound below this constant, in particular an $o(v_n)$ integral, would prove an eventual lead using the inert race alone.
 
-The direct GRH estimate from unit-interval zero counts gives $O(v_n\log^4(1/v_n))$ for the integral. To see the loss, the coefficient of an ordinate in the sharp increment for each character has modulus $|2\sinh((1/2+i\gamma)v)/(1/2+i\gamma)|\ll\min(v,(1+|\gamma|)^{-1})$. The total absolute weight in the unit bin $j$ is bounded by $a_j\ll\log(2+|j|)\min(v,(1+|j|)^{-1})$. Square a finite zero sum and apply the local mean-square estimate. The bin weights of the square are bounded by two adjacent copies of the discrete convolution $a*a$. Young's inequality gives an integral $\ll\|a*a\|_2^2\le\|a\|_{4/3}^4\ll v\log^4(1/v)$. Truncation then passes to the limit in local fourth mean by the same bound on tails. The exponentially small prime-power and trivial-zero errors are absorbed at $v=v_n$. The usual prime-race densities do not control this local fourth moment. Montgomery and Soundararajan study moments of ordinary primes with additional hypotheses and different window ranges. [Dirichlet zero counts](https://arxiv.org/abs/2005.02989) · [Races modulo 12](https://arxiv.org/abs/math/9910184) · [Montgomery and Soundararajan](https://arxiv.org/abs/math/0409258)
+The direct GRH estimate from unit-interval zero counts gives $O(v_n\log^4(1/v_n))$ for the integral. To see the loss, the coefficient of an ordinate in the sharp increment for each character has modulus $|2\sinh((1/2+i\gamma)v)/(1/2+i\gamma)|\ll\min(v,(1+|\gamma|)^{-1})$. The total absolute weight in the unit bin $j$ is bounded by $a_j\ll\log(2+|j|)\min(v,(1+|j|)^{-1})$. Square a finite zero sum and apply the local mean-square estimate. The bin weights of the square are bounded by two adjacent copies of the discrete convolution $`a*a`$. Young's inequality gives an integral $`\ll\|a*a\|_2^2\le\|a\|_{4/3}^4\ll v\log^4(1/v)`$. Truncation then passes to the limit in local fourth mean by the same bound on tails. The exponentially small prime-power and trivial-zero errors are absorbed at $v=v_n$. The usual prime-race densities do not control this local fourth moment. Montgomery and Soundararajan study moments of ordinary primes with additional hypotheses and different window ranges. [Dirichlet zero counts](https://arxiv.org/abs/2005.02989) [Races modulo 12](https://arxiv.org/abs/math/9910184) [Montgomery and Soundararajan](https://arxiv.org/abs/math/0409258)
 
 ## The two sharp character sums
 
@@ -77,11 +77,11 @@ The error includes the residue at zero and the trivial zeros. The countably many
 
 For a finite set of frequencies with coefficients $c_\gamma$, on any interval $J$ of length at most one,
 
-$$
+```math
 \int_J\left|\sum_\gamma c_\gamma e^{i\gamma u}\right|^2du
  \ll\sum_{j\in\mathbb Z}
-       \left(\sum_{j\le\gamma<j+1}|c_\gamma|\right)^2.
-$$
+       \left(\sum_{j\le\gamma\lt j+1}|c_\gamma|\right)^2.
+```
 
 Majorize the indicator of $J$ by a constant times a Gaussian centered at its midpoint. After expanding the square, the Fourier transform bounds each pair of unit bins by $O((1+|j-k|)^{-2})$. The inequality follows by $2ab\le a^2+b^2$ and summation. Each unit bin contains $O_\chi(\log(2+|j|))$ zeros, so the integral of the squared tail with $|\gamma|>H$ and coefficients $1/\rho$ is $O_\chi(\log^2 H/H)$ uniformly in $J$. The bound first applies to finite tails. It gives convergence in local mean square and agrees almost everywhere with the symmetric explicit formula. [Bennett, Martin, O'Bryant and Rechnitzer, zero counting](https://arxiv.org/abs/2005.02989)
 
@@ -116,11 +116,11 @@ $$
 
 Integration by parts with $f(s)=\sin(vs)/s$ gives
 
-$$
-4\sum_{0<\gamma\le H}\frac{\sin(v\gamma)}{\gamma}
+```math
+4\sum_{0\lt \gamma\le H}\frac{\sin(v\gamma)}{\gamma}
 =\frac{2}{\pi}\int_0^\infty\frac{\sin(vs)}s\log\frac{qs}{2\pi}\,ds+o(1)
 =\log(1/v)+\log\frac q{2\pi}-\gamma_{\rm E}+o(1).
-$$
+```
 
 Indeed $|f'(s)|\le 2v/s$ for $s\ge1$, and $|f'(s)|\ll v^3s$ below 1. The counting error contributes $O_\chi(v\log^2 H+\log H/H)$. One integration by parts bounds the tail of the main integral by $O_\chi(\log H/(Hv))$. The sine integral and its logarithmic moment are $\pi/2$ and $-\pi\gamma_{\rm E}/2$, from the value and derivative at zero of $\Gamma(s)\sin(\pi s/2)$. This proves the two estimates for $Q_\chi(t\pm v)$. Since $v\log T=o(1)$, replacing their denominators $\sqrt{z_\pm}$ by $\sqrt x$ changes their difference by $o(1)$.
 

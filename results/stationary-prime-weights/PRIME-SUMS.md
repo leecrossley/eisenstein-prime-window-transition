@@ -2,10 +2,10 @@
 
 Assume GRH for the primitive Dirichlet characters of discriminants $-4$ and $12$. At the exact cutoff $b=b_K$, the normalized Eisenstein race is $F(t)-B(t)$ at $t=\log(by)$. For a prime $q$ write $F_q=F(\log q)$, $B_q=B(\log q)$, $\mu_q=(\log q)/q$, and define
 
-$$
+```math
  W_j=\sum_{\substack{q\ {\rm prime},\ q\equiv j\ (12)\\ B_q\ge F_q^2}}\frac{\mu_q}{F_q},
  \qquad j\in\{1,5,7,11\}.
-$$
+```
 
 All statements about series start sufficiently late, where $F(t)>0$. The displayed inequality includes equality and implies $B_q>0$. The convergence of $W_{11}$ itself remains unresolved. The results below remove the divisor on a growing part of the selected set, prove convergence of the signed difference between the two inert classes, and give a necessary divergence test at an actual tie.
 
@@ -21,10 +21,10 @@ Put $K_q=\log(1/F_q)$, $D_q=\log(B_q/F_q^2)$ for selected primes, and $g(t)=t^{3
 
 In the first assertion the upper bound can in particular be replaced by $K_q^\theta$ for any $0\le\theta<1/3$. More generally, for $T$ large, $V\gg1$, $v,w\ge0$,
 
-$$
-\sum_{\substack{T\le\log q\le2T,\ V\le K_q<2V\\ v\le D_q\le v+w}}\frac{\mu_q}{F_q}
+```math
+\sum_{\substack{T\le\log q\le2T,\ V\le K_q\lt 2V\\ v\le D_q\le v+w}}\frac{\mu_q}{F_q}
  \ll_b \frac{T(1+w)}{V^2}. \tag{1}
-$$
+```
 
 Here $D_q$ is restricted to selected primes. The constant is independent of $v,w,T,V$. The same proof applies to $-C\le D_q\le C$ when $B_q>0$, for any fixed $C$.
 
@@ -43,18 +43,18 @@ At $h=0$ the continuous value of the product is zero. The two triangle inequalit
 
 The following approximation holds on the whole block, including the corners.
 
-$$
+```math
  B(\tau+h)=b_0+dh+
  O_b\!\left(nh^2+n\log(2n)e^{-n/2}|h|\right). \tag{3}
-$$
+```
 
 Between corners $B''=O_b(1)$. The first-power coefficients of every good rational prime cancel in $B$. A remaining corner comes from a prime power $l^m$, $2\le m\ll_b n$, at one of the three fixed scales $l^m,bl^m,l^m/b$. The ramified powers of $3$ are included for late blocks. On a log interval of length $r\le1$ near $\tau$ there are $O_b(1+rx^{1/m}/m)$ possible integers $l$ for each exponent and scale. Each jump of $B'$ costs $O_b((\log l)/\sqrt x)=O_b(n/(m\sqrt x))$. Summing gives total jump size $O_b(n\log(2n)/\sqrt x+nr)$, since $x^{1/m}\le\sqrt x$ and $\sum_{m\ge2}m^{-2}<\infty$. Integrate this bound on slope variation from $\tau$, including a possible jump at $\tau$ when $h<0$. This proves (3). [Prime-power coefficients and jumps](PROOF.md)
 
 At all points with $F(t)\ll e^{-c g(n)}$ for a fixed $c>0$, (2) gives $|h|\ll_b F(t)/k$ and $k\gg_c g(n)$. Consequently the error in (3), divided by $F(t)^2$, is
 
-$$
+```math
  O_b\!\left(\frac n{k^2}+\frac{n\log(2n)e^{-n/2}}{k F(t)}\right)=o(1). \tag{4}
-$$
+```
 
 Here $g(n)/\sqrt n\to\infty$ and the pointwise floor controls the second term, including at the smallest allowed spectral values. This proves that the linear term is accurate on the scale of the square that defines the selection.
 
@@ -67,10 +67,10 @@ $O_{b,\epsilon}(Tg(T)^{-5/3}(\log T)^{-4/3-\epsilon})=O_{b,\epsilon}((\log T)^{-
 
 There is a version on the full selected set with a smaller pointwise divisor. Write $L_q=\log(1/B_q)$. For every $\beta>2/3$,
 
-$$
+```math
 \sum_{B_q\ge F_q^2}\frac{\mu_q}
- {F_q\,\min\{L_q,1+D_q\}^{\beta}}<\infty. \tag{1a}
-$$
+ {F_q\,\min\{L_q,1+D_q\}^{\beta}}\lt \infty. \tag{1a}
+```
 
 Indeed on a band $V\le K_q<2V$ one has $D_q\le 4V$. Sum (1) with $w=1$, $v=0,1,\ldots,\lfloor4V\rfloor$ and weights $(1+v)^{-\beta}$. For $2/3<\beta<1$ the result is $O_{b,\beta}(T/V^{1+\beta})$. Dyadic summation in $V\gg g(T)$ and then in $T$ converges, and larger $\beta$ follow by monotonicity beyond finitely many initial terms. For the $L_q^\beta$ bound, (2) gives $L_q\gg_b g(T)$ and selection gives $K_q\ge L_q/2$. An occupied band $V\le K_q<2V$ costs $O_b(T/V)$ by summing the unit-strip bound in its $O_b(T/V)$ blocks. Summing over dyadic $V\gg_b g(T)$ gives $O_b(T/g(T)^{1+\beta})$ after division, summable over dyadic $T$ for $\beta>2/3$. Adding the bounds controls the reciprocal of the smaller divisor.
 
@@ -78,19 +78,19 @@ Indeed on a band $V\le K_q<2V$ one has $D_q\le 4V$. Sum (1) with $w=1$, $v=0,1,\
 
 The following construction describes the entire remaining sum up to an absolutely summable error. Retain the notation of (2) and put
 
-$$
- \phi(r)=C_b r\log(1/r),\qquad 0<r\le e^{-4}.
-$$
+```math
+ \phi(r)=C_b r\log(1/r),\qquad 0\lt r\le e^{-4}.
+```
 
-On each side $\xi\in\{-1,1\}$ of $\tau$ keep the radii in
+On each side $`\xi\in\{-1,1\}`$ of $\tau$ keep the radii in
 
-$$
- I_{n,\xi}=\{r:\ 0<r\le e^{-4},\ n\le\tau+\xi r\le n+1,\
-     \phi(r)\ge\max(16a,n^5e^{-n/2}),\
+```math
+ I_{n,\xi}=\{r:\ 0\lt r\le e^{-4},\ n\le\tau+\xi r\le n+1,\space{}
+     \phi(r)\ge\max(16a,n^5e^{-n/2}),\space{}
      \phi(r)^2\le b_0+\xi dr\}. \tag{5}
-$$
+```
 
-Each nonempty set is an interval, allowing a single point. Indeed $\phi$ is increasing and $(\phi^2)''=2C_b^2[(\log(1/r))^2-3\log(1/r)+1]>0$ throughout the displayed range. Use half-open blocks for the prime sums, assigning a boundary prime to one block.
+Each nonempty set is an interval, allowing a single point. Indeed $\phi$ is increasing and $`(\phi^2)''=2C_b^2[(\log(1/r))^2-3\log(1/r)+1]>0`$ throughout the displayed range. Use half-open blocks for the prime sums, assigning a boundary prime to one block.
 
 For each class $j$, replace the original prime weight in its block by $\mu_q/\phi(r)$ on these intervals and zero elsewhere. The sum over all primes of the absolute errors of this replacement is finite. The same assertion holds with Lebesgue measure in place of $\mu_q$. The following details prove summability, including at the boundaries of (5).
 
