@@ -70,7 +70,7 @@ def root(b):
 
 
 def inverse(a):
-    assert a[0]>0
+    require(a[0]>0, "inverse of an interval that is not positive")
     return 1/a[1],1/a[0]
 
 
