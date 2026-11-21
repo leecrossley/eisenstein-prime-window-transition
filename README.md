@@ -48,4 +48,4 @@ python3 -m pip install -r requirements.txt
 bash verify-release.sh
 ```
 
-The recorded run used arm64 macOS with the pinned imports. The proof gives that [cached build command](PROOF.md#verification). [Recorded output](evidence/check.txt) · [SHA-256 manifest](SHA256SUMS) · [Tagged publication](https://github.com/leecrossley/eisenstein-prime-window-transition/releases/tag/v1.0.1)
+The recorded run used arm64 macOS with the pinned imports. The proof gives that [cached build command](PROOF.md#verification). [Recorded output](evidence/check.txt) · [SHA-256 manifest](SHA256SUMS) · [Tagged publication](https://github.com/leecrossley/eisenstein-prime-window-transition/releases/tag/v1.0.2)
