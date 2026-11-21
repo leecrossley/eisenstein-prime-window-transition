@@ -5,7 +5,7 @@
 Write $W_b(t)=b(1-1/t)$ for $1<t\le b$, $W_b(t)=b^2/t-1$ for $b<t<b^2$ and zero elsewhere. For the primitive character $\chi_4$ of discriminant $-4$ let
 
 $$
-A_b(y)=-\sum_{\mathfrak p\nmid6}\chi_4(N\mathfrak p)\log(N\mathfrak p)\,
+A_b(y)=-\sum_{\mathfrak p\nmid6}\chi_4(N\mathfrak p)\log(N\mathfrak p)\thinspace
                                       W_b(N\mathfrak p/y).
 $$
 
@@ -19,10 +19,10 @@ The Mellin transform is $H_b(s)=(b^s-1)(b^s-b)/(s(s-1))$, continued at 0 and 1. 
 
 $$
 H_b(\rho)=e^{i\tau\log b}h_b(\tau),\qquad
-h_b(\tau)=\frac{\sqrt b\,(b+1-2\sqrt b\cos(\tau\log b))}{1/4+\tau^2}>0 .
+h_b(\tau)=\frac{\sqrt b\thinspace(b+1-2\sqrt b\cos(\tau\log b))}{1/4+\tau^2}>0 .
 $$
 
-The prime-square term in $A_b$ has coefficient $B_b=2\sqrt b(\sqrt b-1)^2$ at scale $\sqrt y$. Indeed $\chi_4(N\mathfrak p)^2=1$ at the retained places, and the prime ideal theorem gives $B_b=\int_1^b W_b(v^2)\,dv$. In this quadratic field the required prime ideal theorem also follows from the prime number theorem for the class $1\bmod3$, since those rational primes split and inert-prime norms are squares. Prime powers of exponent at least three contribute $O_b(y^{1/3}\log^2 y)$. The trivial zeros, including the possible zero at 0 of an even primitive character, contribute $O_b(1)$ to this compact window for $y\ge2$.
+The prime-square term in $A_b$ has coefficient $B_b=2\sqrt b(\sqrt b-1)^2$ at scale $\sqrt y$. Indeed $\chi_4(N\mathfrak p)^2=1$ at the retained places, and the prime ideal theorem gives $B_b=\int_1^b W_b(v^2)\thinspace dv$. In this quadratic field the required prime ideal theorem also follows from the prime number theorem for the class $1\bmod3$, since those rational primes split and inert-prime norms are squares. Prime powers of exponent at least three contribute $O_b(y^{1/3}\log^2 y)$. The trivial zeros, including the possible zero at 0 of an even primitive character, contribute $O_b(1)$ to this compact window for $y\ge2$.
 
 With zeros from both functions counted with multiplicities,
 
@@ -32,11 +32,11 @@ $$
 
 This is the ordinary von Mangoldt explicit formula for the two characters with the higher prime powers removed. Absolute convergence follows from the quadratic denominator and the Dirichlet zero-counting bound. Both central values are nonzero. For every real $s>0$ the $\chi_4$ series has positive two-term blocks. The $\chi_{12}$ blocks have the form $f(12k+1)-f(12k+5)-f(12k+7)+f(12k+11)>0$ with $f(x)=x^{-s}$, since $f(x)-f(x+4)$ decreases. [Dirichlet explicit formula and smoothed races](https://link.springer.com/article/10.1007/s11139-025-01238-9) · [Dirichlet zero counting](https://doi.org/10.1090/mcom/3599)
 
-Put $L_b^*=\sum_\rho h_b(\tau)$. Simultaneous approximation of any finite set of phases to 1 gives $\limsup A_b(y)/\sqrt y=B_b+L_b^*$. Always $\liminf A_b(y)/\sqrt y\ge B_b-L_b^*$. With independence of the union of the distinct positive ordinates, finite phases also come arbitrarily close to $-1$, giving equality at that lower endpoint. An entire tail has uniformly small contribution by absolute convergence. [Rubinstein–Sarnak, distribution of prime races](https://www.math.uwaterloo.ca/~mrubinst/publications/Chebyshev.pdf)
+Put $L_b^\ast=\sum_\rho h_b(\tau)$. Simultaneous approximation of any finite set of phases to 1 gives $\limsup A_b(y)/\sqrt y=B_b+L_b^\ast$. Always $\liminf A_b(y)/\sqrt y\ge B_b-L_b^\ast$. With independence of the union of the distinct positive ordinates, finite phases also come arbitrarily close to $-1$, giving equality at that lower endpoint. An entire tail has uniformly small contribution by absolute convergence. [Rubinstein–Sarnak, distribution of prime races](https://www.math.uwaterloo.ca/~mrubinst/publications/Chebyshev.pdf)
 
 ## Computing the crossing
 
-For either character $\chi$ let $q$ be its conductor, $a\in\{0,1\}$ its parity, and $d_\chi=L'(1,\chi)/L(1,\chi)$. Write $\psi=\Gamma'/\Gamma$ and $\gamma$ for Euler's constant. The functional equation and Hadamard product of the completed function give
+For either character $\chi$ let $q$ be its conductor, $a\in\lbrace0,1\rbrace$ its parity, and $d_\chi=L'(1,\chi)/L(1,\chi)$. Write $\psi=\Gamma'/\Gamma$ and $\gamma$ for Euler's constant. The functional equation and Hadamard product of the completed function give
 
 $$
 C_\chi=\sum_{\rho_\chi}\frac{1}{\rho_\chi(1-\rho_\chi)}
@@ -45,7 +45,7 @@ $$
 
 Indeed subtraction of the completed logarithmic derivatives at 1 and 0 removes the Hadamard constant, and the functional equation makes them opposites. The two zero sums are absolutely convergent in this paired expression.
 
-Set $S_\chi(b)=\sum_{\rho_\chi}b^{\rho_\chi}/[\rho_\chi(1-\rho_\chi)]$ and $R_\chi(b)=\sum_n\chi(n)\Lambda(n)(b/n-1)_+$. In the inverse Mellin integral of $(-L'/L)(s)b^s/[s(s-1)]$ the residue at 1 is $-b d_\chi$. The residue at 0 is independent of $b$ for an odd character and increases by $\log b$ for an even one, due to the simple trivial zero there. A trivial zero at $-m<0$ contributes $-b^{-m}/[m(m+1)]$. Subtract the formula at $b=1$ to obtain
+Set $S_\chi(b)=\sum_{\rho_\chi}b^{\rho_\chi}/[\rho_\chi(1-\rho_\chi)]$ and $R_\chi(b)=\sum_n\chi(n)\Lambda(n)\max(b/n-1,0)$. In the inverse Mellin integral of $(-L'/L)(s)b^s/[s(s-1)]$ the residue at 1 is $-b d_\chi$. The residue at 0 is independent of $b$ for an odd character and increases by $\log b$ for an even one, due to the simple trivial zero there. A trivial zero at $-m<0$ contributes $-b^{-m}/[m(m+1)]$. Subtract the formula at $b=1$ to obtain
 
 $$
  S_\chi(b)-C_\chi=R_\chi(b)+(b-1)d_\chi
@@ -54,10 +54,10 @@ $$
 
 where $T_\chi$ sums the positive trivial-zero terms $b^{-m}/[m(m+1)]$ for its parity. The vanishing of the ramp at its endpoint makes this identity continuous at prime powers. The contour shift uses absolute convergence of the zero sum along the usual heights avoiding zeros. For the two characters together the trivial zeros supply every positive integer $m$ once, so $T_4(b)+T_{12}(b)=1+(b-1)\log(1-1/b)$.
 
-Under GRH, pairing conjugates gives $L_b^*/\sqrt b=(b+1)(C_4+C_{12})-2(S_4(b)+S_{12}(b))$. The two logarithmic derivatives cancel. Hence with $C=2\gamma+\log(\pi^2/12)$ and $R=R_4+R_{12}$,
+Under GRH, pairing conjugates gives $L_b^\ast/\sqrt b=(b+1)(C_4+C_{12})-2(S_4(b)+S_{12}(b))$. The two logarithmic derivatives cancel. Hence with $C=2\gamma+\log(\pi^2/12)$ and $R=R_4+R_{12}$,
 
 $$
- F(b):=\frac{B_b-L_b^*}{\sqrt b}
+ F(b):=\frac{B_b-L_b^\ast}{\sqrt b}
  =2(\sqrt b-1)^2+(b-1)C+2R(b)-2\log b
                   +2(b-1)\log(1-1/b).
 $$
@@ -70,7 +70,7 @@ $$
  F''(b)=b^{-3/2}+2/[b(b-1)]>0 .
 $$
 
-The continuous extension has $F(1)=0$ and $F(3)<-0.82$, so convexity gives strict negativity on $(1,3]$. The right derivatives at 3 and 7 both exceed $0.04$. Thus $F$ is strictly increasing from 3 through 9. The certificates give opposite signs at the two stated decimal endpoints and $\sqrt5 F(5)>0.94$. For $b\ge9$ one has $L_b^*/\sqrt b\le(\sqrt b+1)^2(C_4+C_{12})$. The dimensionless drift $2((\sqrt b-1)/(\sqrt b+1))^2$ increases and already equals $1/2$ at 9. Both certificates bound $C_4+C_{12}<0.49$, proving positivity on the whole remaining half-line.
+The continuous extension has $F(1)=0$ and $F(3)<-0.82$, so convexity gives strict negativity on $(1,3]$. The right derivatives at 3 and 7 both exceed $0.04$. Thus $F$ is strictly increasing from 3 through 9. The certificates give opposite signs at the two stated decimal endpoints and $\sqrt5 F(5)>0.94$. For $b\ge9$ one has $L_b^\ast/\sqrt b\le(\sqrt b+1)^2(C_4+C_{12})$. The dimensionless drift $2((\sqrt b-1)/(\sqrt b+1))^2$ increases and already equals $1/2$ at 9. Both certificates bound $C_4+C_{12}<0.49$, proving positivity on the whole remaining half-line.
 
 ## Why eventual dominance implies the two GRHs
 
@@ -94,10 +94,10 @@ $$
 
 The right side is the autocorrelation of $v\mapsto e^{v/2}{\bf1}_{[0,a]}(v)$. This is the cross term in Grenié and Molteni's proof of Theorem 3.5 with $T=b$. Their application bounds generators of a class group. The fixed dyadic ordinary-prime inequality also predates this work. [Grenié–Molteni](https://arxiv.org/pdf/1607.02430#page=6) · [Earlier fixed dyadic calculation and attribution](https://github.com/leecrossley/dyadic-prime-deficit/blob/922c30830cf5195152162445aa693bb50983e8e4/README.md)
 
-There is a direct comparison with Zhao's integrated first Mertens error for a real primitive character. Put $U_\chi(x)=\sum_{p>3}\chi(p)\log p\,(x/p-1)_+$. This differs from the integrated error by an affine function for $x\ge3$, including the adjustment for the excluded primes. The compact rational-prime window for $\chi$ is $bU_\chi(y)-(b+1)U_\chi(by)+U_\chi(b^2y)$. Each affine term cancels. For an exact alternative description of the Eisenstein race, take the negative of both rational-prime windows and subtract the inert-prime contribution
+There is a direct comparison with Zhao's integrated first Mertens error for a real primitive character. Put $U_\chi(x)=\sum_{p>3}\chi(p)\log p\thinspace\max(x/p-1,0)$. This differs from the integrated error by an affine function for $x\ge3$, including the adjustment for the excluded primes. The compact rational-prime window for $\chi$ is $bU_\chi(y)-(b+1)U_\chi(by)+U_\chi(b^2y)$. Each affine term cancels. For an exact alternative description of the Eisenstein race, take the negative of both rational-prime windows and subtract the inert-prime contribution
 
 $$
- 2\sum_{\substack{p>3\\p\equiv2\!\!\pmod3}}\log p\,W_b(p^2/y).
+ 2\sum_{\substack{p>3\\p\equiv2\!\!\pmod3}}\log p\thinspace W_b(p^2/y).
 $$
 
 Indeed the two rational characters agree at split primes and cancel at inert primes. Each inert prime gives one ideal of norm $p^2$, in the norm-1 class. Zhao's Theorem 3 classifies individual quadratic characters for a cumulative integral. Its sign alone does not determine this signed three-point difference or the inert-prime correction. [Zhao, Theorem 3 and Section 6](https://arxiv.org/html/2411.18903v2)
@@ -108,7 +108,7 @@ Suzuki proves sign criteria for other weighted sums. Fiorilli and Jouve prove ev
 
 The finite identity `EisensteinPrimeRace.trace_eq_norm_race` applies to primes of a tower host $E$ and uses `ThetaTransfer.theta_prime_trace_extract`. If the row character agrees with the norm character modulo four on the supplied places, the normalized difference of the consecutive Hecke traces equals the norm-1 sum minus the norm-3 sum on those places. This is the opposite sign convention to $A_b$. The row and its values are hypotheses. [Lean declarations](EisensteinTrace.lean) · [Pinned trace extraction](https://github.com/leecrossley/theta-prime-trace/blob/7a7909d2dc7bb9d8d0ec7b2dc8c78e70f93782d7/ThetaPrimeTrace.lean#L66)
 
-There is a direct obstruction to using this identity for the Eisenstein field. Every `D7` host satisfies $[E:\mathbb Q]=4\,\mathrm{ord}$, with $\mathrm{ord}$ a natural number. An isomorphism of rational algebras preserves degree. Since $\mathbb Q(\sqrt{-3})$ has degree two, it cannot be such a host. The declaration `EisensteinPrimeRace.no_quadratic_host` proves this obstruction for every rational field extension of degree two. Transferring a race on one field to a different host would need a theorem comparing their weighted prime ideals. The analytic argument used here works directly over the Eisenstein field. [Upstream `finrank_cmField`](https://github.com/Deicyde/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ConjEMemHostFIff.lean#L183) · [Host structure](https://github.com/Deicyde/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalRingCardinality/DataHost.lean#L39)
+There is a direct obstruction to using this identity for the Eisenstein field. Every `D7` host satisfies $[E:\mathbb Q]=4\thinspace\mathrm{ord}$, with $\mathrm{ord}$ a natural number. An isomorphism of rational algebras preserves degree. Since $\mathbb Q(\sqrt{-3})$ has degree two, it cannot be such a host. The declaration `EisensteinPrimeRace.no_quadratic_host` proves this obstruction for every rational field extension of degree two. Transferring a race on one field to a different host would need a theorem comparing their weighted prime ideals. The analytic argument used here works directly over the Eisenstein field. [Upstream `finrank_cmField`](https://github.com/Deicyde/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ConjEMemHostFIff.lean#L183) · [Host structure](https://github.com/Deicyde/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalRingCardinality/DataHost.lean#L39)
 
 ## Verification
 
