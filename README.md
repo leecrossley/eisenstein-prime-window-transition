@@ -1,5 +1,7 @@
 # A sharp window width for an Eisenstein prime-ideal race
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24410867.svg)](https://doi.org/10.5281/zenodo.24410867)
+
 Take the prime ideals of the Eisenstein integers and group them by whether their norm is 1 or 3 modulo 4. Give the most weight to norms near the middle of a moving window. Under the hypotheses below, the width at which the two classes change behaviour lies between $4.49334142447806$ and $4.49334142447807$.
 
 At width 5, the norm-3 class eventually leads if and only if the generalized Riemann hypothesis (GRH) holds for the two Dirichlet functions of discriminants $-4$ and $12$. At width 4, both classes take the lead arbitrarily late under those two GRHs and rational independence of their distinct positive zero ordinates.
