@@ -9,7 +9,7 @@ repository-code: https://github.com/leecrossley/eisenstein-prime-window-transiti
 type: software
 references:
   - type: software
-    title: "A sharp window width for an Eisenstein prime-ideal race"
+    title: "The Eisenstein prime-ideal race at the exact cutoff"
     authors:
       - family-names: Crossley
         given-names: Lee
