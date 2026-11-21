@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24410867.svg)](https://doi.org/10.5281/zenodo.24410867)
 
-**Research collection.** [Browse all results on eisenstein prime-ideal race](RESULTS.md), including proofs, certificates and original citations.
+**Research collection.** [Browse all results on the Eisenstein prime-ideal race](RESULTS.md), including proofs, certificates and original citations.
 
 Take the prime ideals of the Eisenstein integers and group them by whether their norm is 1 or 3 modulo 4. Give the most weight to norms near the middle of a moving window. Under the hypotheses below, the width at which the two classes change behaviour lies between $4.49334142447806$ and $4.49334142447807$.
 

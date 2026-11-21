@@ -1,6 +1,6 @@
 # Research contributions
 
-This repository maintains work on eisenstein prime-ideal race. Start at [the results index](RESULTS.md).
+This repository maintains work on the Eisenstein prime-ideal race. Start at [the results index](RESULTS.md).
 
 Extend the existing result when an argument, bound or certificate improves it. Give a distinct result in the same family a directory under `results/` and an index entry. Record its hypotheses, its verification command and which parts the proof checker or numerical certificate covers. Keep evidence and independent checks identifiable.
 
