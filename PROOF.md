@@ -66,8 +66,8 @@ $$
 For $1<b\le9$ the only nonzero ramp coefficients strictly below 9 are $-\log3$ at 3 and $-2\log7$ at 7. The characters cancel at 5. Between these corners,
 
 $$
- F'(b)=2-2/\sqrt b+C+2\log(1-1/b)+2R'(b),\qquad
- F''(b)=b^{-3/2}+2/[b(b-1)]>0 .
+ F^{\prime}(b)=2-2/\sqrt b+C+2\log(1-1/b)+2R^{\prime}(b),\qquad
+ F^{\prime\prime}(b)=b^{-3/2}+\frac{2}{b(b-1)}\gt0 .
 $$
 
 The continuous extension has $F(1)=0$ and $F(3)<-0.82$, so convexity gives strict negativity on $(1,3]$. The right derivatives at 3 and 7 both exceed $0.04$. Thus $F$ is strictly increasing from 3 through 9. The certificates give opposite signs at the two stated decimal endpoints and $\sqrt5 F(5)>0.94$. For $b\ge9$ one has $L_b^\ast/\sqrt b\le(\sqrt b+1)^2(C_4+C_{12})$. The dimensionless drift $2((\sqrt b-1)/(\sqrt b+1))^2$ increases and already equals $1/2$ at 9. Both certificates bound $C_4+C_{12}<0.49$, proving positivity on the whole remaining half-line.
