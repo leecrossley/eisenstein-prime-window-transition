@@ -1,0 +1,5 @@
+Conductor 4: a critical-line ordinate lies in (5,7); its conjugate pair has weight > 0.10.
+Conductor 12: a critical-line ordinate lies in (3,4); its conjugate pair has weight > 0.32.
+Conductor 4: the completed Dirichlet series through 12000, with its entire tail bounded, confirms both endpoint signs.
+Conductor 12: the completed Dirichlet series through 12000, with its entire tail bounded, confirms both endpoint signs.
+Rational bounds confirm both pair weights throughout the published cutoff bracket.

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: "How often can the Eisenstein prime race lose its lead at the cutoff?"
+abstract: "Exceptional scales for the critical Eisenstein prime-ideal race under two Dirichlet GRHs."
+authors:
+  - family-names: Crossley
+    given-names: Lee
+version: 1.0.3
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/eisenstein-critical-exceptions
+type: software
