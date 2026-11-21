@@ -90,7 +90,7 @@ On each side $`\xi\in\{-1,1\}`$ of $\tau$ keep the radii in
      \phi(r)^2\le b_0+\xi dr\}. \tag{5}
 ```
 
-Each nonempty set is an interval, allowing a single point. Indeed $\phi$ is increasing and $`(\phi^2)''=2C_b^2[(\log(1/r))^2-3\log(1/r)+1]>0`$ throughout the displayed range. Use half-open blocks for the prime sums, assigning a boundary prime to one block.
+Each nonempty set is an interval, allowing a single point. Indeed $\phi$ is increasing and $`(\phi^2)^{\prime\prime}=2C_b^2\bigl[(\log(1/r))^2-3\log(1/r)+1\bigr]\gt 0`$ throughout the displayed range. Use half-open blocks for the prime sums, assigning a boundary prime to one block.
 
 For each class $j$, replace the original prime weight in its block by $\mu_q/\phi(r)$ on these intervals and zero elsewhere. The sum over all primes of the absolute errors of this replacement is finite. The same assertion holds with Lebesgue measure in place of $\mu_q$. The following details prove summability, including at the boundaries of (5).
 

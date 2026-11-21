@@ -242,7 +242,7 @@ There is also an all-depth test for the original sharp inequalities using only t
 ```math
  P_{\tau,p}=
   \sum_{\substack{q\ {\rm prime},\ q\equiv11\pmod {12},\ 0\lt r_q\le e^{-4}\\[0pt]
-         \max(16f,m)\le\phi(r_q)\le m^{1/p}} \frac{\mu_q}{\phi(r_q)} .
+         \max(16f,m)\le\phi(r_q)\le m^{1/p}}} \frac{\mu_q}{\phi(r_q)} .
 ```
 
 For $1<p<2$, with $W_\tau$ the actual undivided strict-lead sum on $I_\tau$,
