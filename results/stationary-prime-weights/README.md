@@ -28,4 +28,4 @@ python3 -B verify.py > replay.txt
 diff -u evidence/check.txt replay.txt
 ```
 
-The interval-arithmetic verifier evaluates the maximum by the original prime-ideal sum and by the product formula. It checks the slope at that maximum and the independent signed densities of the three prime-square jumps. The asymptotic series and error bounds have written proofs. [Recorded output](evidence/check.txt) · [File checksums](SHA256SUMS)
+The interval-arithmetic verifier evaluates $B$ at the maximum directly from its tent sum and compares it with the product bound. The prime-ideal sum gives $F$ and its derivative there. It checks the slope at that maximum and the independent signed densities of the three prime-square jumps. The asymptotic series and error bounds have written proofs. [Recorded output](evidence/check.txt) · [File checksums](SHA256SUMS)
