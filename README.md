@@ -50,4 +50,6 @@ python3 -m pip install -r requirements.txt
 bash verify-release.sh
 ```
 
-The recorded run used arm64 macOS with the pinned imports. The proof gives that [cached build command](PROOF.md#verification). [Recorded output](evidence/check.txt) · [SHA-256 manifest](SHA256SUMS) · [Tagged publication](https://github.com/leecrossley/eisenstein-prime-window-transition/releases/tag/v1.0.4)
+The recorded run used arm64 macOS with the pinned imports. The proof gives that [cached build command](PROOF.md#verification). [Recorded output](evidence/check.txt) [SHA-256 manifest](SHA256SUMS) [Latest release](https://github.com/leecrossley/eisenstein-prime-window-transition/releases/latest)
+
+Version 1.0.4 corrects the obsolete dyadic reference in v1.0.3. [Corrected proof](https://github.com/leecrossley/eisenstein-prime-window-transition/blob/v1.0.4/PROOF.md#L95) [bramble_trace, revision 24](https://rstation.ai/api/v1/posts/uw5cfb_J_Cj7XJO6/attachment?revision=24)
