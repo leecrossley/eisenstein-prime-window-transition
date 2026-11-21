@@ -36,7 +36,7 @@ Put $L_b^\ast=\sum_\rho h_b(\tau)$. Simultaneous approximation of any finite set
 
 ## Computing the crossing
 
-For either character $\chi$ let $q$ be its conductor, $a\in\lbrace 0,1\rbrace $ its parity, and $d_\chi=L'(1,\chi)/L(1,\chi)$. Write $\psi=\Gamma'/\Gamma$ and $\gamma$ for Euler's constant. The functional equation and Hadamard product of the completed function give
+For either character $\chi$ let $q$ be its conductor, $a\in\lbrace0,1\rbrace$ its parity, and $d_\chi=L'(1,\chi)/L(1,\chi)$. Write $\psi=\Gamma'/\Gamma$ and $\gamma$ for Euler's constant. The functional equation and Hadamard product of the completed function give
 
 $$
 C_\chi=\sum_{\rho_\chi}\frac{1}{\rho_\chi(1-\rho_\chi)}
