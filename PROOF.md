@@ -96,9 +96,9 @@ The right side is the autocorrelation of $v\mapsto e^{v/2}{\bf1}_{[0,a]}(v)$. Th
 
 There is a direct comparison with Zhao's integrated first Mertens error for a real primitive character. Put $U_\chi(x)=\sum_{p>3}\chi(p)\log p\thinspace\max(x/p-1,0)$. This differs from the integrated error by an affine function for $x\ge3$, including the adjustment for the excluded primes. The compact rational-prime window for $\chi$ is $bU_\chi(y)-(b+1)U_\chi(by)+U_\chi(b^2y)$. Each affine term cancels. For an exact alternative description of the Eisenstein race, take the negative of both rational-prime windows and subtract the inert-prime contribution
 
-$$
+```math
  2\sum_{\substack{p>3\\p\equiv2\!\!\pmod3}}\log p\thinspace W_b(p^2/y).
-$$
+```
 
 Indeed the two rational characters agree at split primes and cancel at inert primes. Each inert prime gives one ideal of norm $p^2$, in the norm-1 class. Zhao's Theorem 3 classifies individual quadratic characters for a cumulative integral. Its sign alone does not determine this signed three-point difference or the inert-prime correction. [Zhao, Theorem 3 and Section 6](https://arxiv.org/html/2411.18903v2)
 
