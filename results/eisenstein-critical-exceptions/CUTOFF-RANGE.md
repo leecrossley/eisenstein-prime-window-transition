@@ -22,7 +22,7 @@ $$
        \left(\frac{\log X}{2\log7}-\frac32\right) H_5\right).                 \tag{1}
 $$
 
-Here the even prime powers form $E=\int w\,d\psi_K^*$ with $w(u)=W_b((u/z)^2)$ on $[z,bz]$. Their continuous main term is $D_2z$, where $D_2=2\sqrt b(\sqrt b-1)^2$. In the exact formula for $zB(t)$ the even powers enter as $D_2z-E$. The remaining terms are the negative of the signed odd powers of exponents at least three, the ramified correction at 3 of magnitude below 30, and the nonpositive trivial-zero correction. The bound for the ramified correction also follows by counting at most three powers of 3 in a window of ratio $b^2<27$. [Arithmetic identity and signs](CUTOFF-SCALES.md#the-arithmetic-correction)
+Here the even prime powers form $`E=\int w\,d\psi_K^*`$ with $w(u)=W_b((u/z)^2)$ on $[z,bz]$. Their continuous main term is $D_2z$, where $D_2=2\sqrt b(\sqrt b-1)^2$. In the exact formula for $zB(t)$ the even powers enter as $D_2z-E$. The remaining terms are the negative of the signed odd powers of exponents at least three, the ramified correction at 3 of magnitude below 30, and the nonpositive trivial-zero correction. The bound for the ramified correction also follows by counting at most three powers of 3 in a window of ratio $b^2<27$. [Arithmetic identity and signs](CUTOFF-SCALES.md#the-arithmetic-correction)
 
 The exact identity $\psi_K^*(u)=2\psi(u;3,1)-2\log2\lfloor\log u/\log4\rfloor$ accounts for the omitted prime 2. At most two powers of 4 occur in $[z,bz]$. Their effect is at most $4(b-1)\log2<10$. For $u\ge14$ the fixed-modulus estimates of Ramaré and Rumely give
 
@@ -32,10 +32,10 @@ $$
 
 Use their Theorem 5.2.1 through $10^{10}$ and Table 1 above it. Here $z\ge z_0>14$. Partial summation against the two branches of $w$ gives
 
-$$
+```math
  \frac{2}{\sqrt z}\int_z^{bz}\sqrt u\,|dw(u)|
- =\frac83(b+b^{5/4}-b^{1/4}-\sqrt b)<20 .
-$$
+ =\frac83(b+b^{5/4}-b^{1/4}-\sqrt b)\lt 20 .
+```
 
 The coefficient is increasing for $1\le b\le U$. Also $z^{-1}\int u|dw|\le2b(b-1)$, with $0.002238\cdot2U(U-1)<0.071$. This gives the first two terms of (1) and the omitted-prime allowance. [Ramaré and Rumely, Theorem 5.2.1 and Table 1](https://ramare-olivier.github.io/Maths/rumely.pdf)
 
@@ -45,10 +45,10 @@ A negative odd-power summand is possible only for split primes $p\equiv7\pmod{12
 
 Take the 39 disjoint sign-changing brackets below height 43 for the two twisted characters, counted within each character. Each bracket was certified using Hardy functions and independently using a finite Euler transform. One zero per bracket gives a lower bound for $F(t)$ because every omitted summand is nonnegative under the two GRHs. An ordinate shared by the two functions would have both contributions. Each selected zero contributes
 
-$$
+```math
   \frac{2\sqrt b\,(b+1-2\sqrt b\cos(\gamma\log b))}{1/4+\gamma^2}
              (1+\cos(\gamma t)).
-$$
+```
 
 The following bounds hold at **every real point** of the intervals.
 
@@ -107,10 +107,10 @@ $$
 
 Indeed all selected heights are below 22 and $b>4$, so the coefficient formula gives $a_{\gamma_i}>4/(22^2+1/4)>1/125$. All summands of $F$ are nonnegative and multiplicity only increases the coefficient. Telescoping the products of the twelve unit phases and of their reference values $-1$, including negative integer powers, gives
 
-$$
+```math
  |1+e^{it\Omega}|\le\sum_i |m_i|\,|1+e^{it\gamma_i}|
  \le \sqrt{2S F(t)}.                                                   \tag{2}
-$$
+```
 
 Thus $F(t)>10^{-195}$ whenever $|t\Omega-2\pi k|\le2\pi/3$ for an integer $k$. The upper bound $B(t)\le(2\cdot10^8+1)t^{-8}$ for $t\ge10^6$ is smaller than $10^{-390}$ for $t\ge10^{100}$. Both $F>B$ and $F^2>B$ follow on all these intervals after that point. The interval for $k=0$ reaches beyond $t=10^{1058}$. Joining to the earlier certificate gives $A_b(y)>0$ throughout $7/b^2<y\le\exp(10^{1058})/b$ and $F_q^2>B_q$ at every class-11 prime $q\le\exp(10^{1058})$. For every $k\ge1$ the interval in (2) with the stated angular cut has length $4\pi/(3\Omega)>2\cdot10^{1058}$.
 
