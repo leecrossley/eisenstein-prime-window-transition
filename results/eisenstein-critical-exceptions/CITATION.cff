@@ -8,4 +8,14 @@ authors:
 version: 1.0.3
 license: CC-BY-4.0
 repository-code: https://github.com/leecrossley/eisenstein-prime-window-transition/tree/main/results/eisenstein-critical-exceptions
+doi: 10.5281/zenodo.24410853
 type: software
+references:
+  - type: software
+    title: "A sharp window width for an Eisenstein prime-ideal race"
+    authors:
+      - family-names: Crossley
+        given-names: Lee
+    version: "v1.0.7"
+    doi: 10.5281/zenodo.24425816
+    url: https://github.com/leecrossley/eisenstein-prime-window-transition/releases/tag/v1.0.7

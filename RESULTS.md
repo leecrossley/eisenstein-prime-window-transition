@@ -13,3 +13,13 @@ The first two rows retain their original publication records. The exceptional-se
 ## Checking the collection
 
 Run `sh verify-collection.sh` from the repository root to check the result manifests. Each result’s README gives its mathematical replay and environment requirements. [Contribution and publication guidance](AGENTS.md)
+
+## Edition DOIs
+
+Each DOI identifies a fixed release. The final column identifies the archive with the proof files in this revision. A shared release can contain several papers. The collection as archived on 21 November 2026 is available at [10.5281/zenodo.24425816](https://doi.org/10.5281/zenodo.24425816).
+
+| Result | Published release | Version DOI | Current proof files |
+| --- | --- | --- | --- |
+| [A sharp window width for an Eisenstein prime-ideal race](README.md) | [v1.0.7](https://github.com/leecrossley/eisenstein-prime-window-transition/releases/tag/v1.0.7) | [10.5281/zenodo.24425816](https://doi.org/10.5281/zenodo.24425816) | Same edition |
+| [How often can the Eisenstein prime race lose its lead at the cutoff?](results/eisenstein-critical-exceptions/README.md) | [v1.0.3](https://github.com/leecrossley/eisenstein-critical-exceptions/releases/tag/v1.0.3) | [10.5281/zenodo.24410853](https://doi.org/10.5281/zenodo.24410853) | [10.5281/zenodo.24425816](https://doi.org/10.5281/zenodo.24425816) |
+| [Prime weights at stationary minima of the Eisenstein race](results/stationary-prime-weights/README.md) | [critical-cutoff-v1.0.1](https://github.com/leecrossley/eisenstein-prime-window-transition/releases/tag/critical-cutoff-v1.0.1) | [10.5281/zenodo.24425810](https://doi.org/10.5281/zenodo.24425810) | Same edition |

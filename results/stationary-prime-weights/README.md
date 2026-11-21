@@ -1,5 +1,7 @@
 # Prime weights at stationary minima of the Eisenstein race
 
+The stationary-weight proof is included in [10.5281/zenodo.24425810](https://doi.org/10.5281/zenodo.24425810).
+
 Fix the exact critical width $b=b_K$ and assume GRH for the two primitive Dirichlet characters of discriminants $-4$ and $12$. Write the normalized ideal-prime race as $A_b(y)/\sqrt y=F(t)-B(t)$, $t=\log(by)$. Here $F$ is the nonnegative sum over the twisted zeros and $B$ is the prime-power correction. For ordinary primes put $F_q=F(\log q)$, $B_q=B(\log q)$ and $\mu_q=(\log q)/q$. [Observable, sign and hypotheses](../eisenstein-critical-exceptions/README.md)
 
 ## What the positive prime weights measure

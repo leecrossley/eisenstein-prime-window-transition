@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Cite the collection release listed under references for this paper."
+title: "Prime weights at stationary minima of the Eisenstein race"
+authors:
+  - family-names: Crossley
+    given-names: Lee
+license: CC-BY-4.0
+repository-code: https://github.com/leecrossley/eisenstein-prime-window-transition/tree/5dd7a01ba22f9cc45cf5ee1c6818e24d0b005f8e/results/stationary-prime-weights
+type: software
+references:
+  - type: software
+    title: "A sharp window width for an Eisenstein prime-ideal race"
+    authors:
+      - family-names: Crossley
+        given-names: Lee
+    version: "critical-cutoff-v1.0.1"
+    doi: 10.5281/zenodo.24425810
+    url: https://github.com/leecrossley/eisenstein-prime-window-transition/releases/tag/critical-cutoff-v1.0.1
