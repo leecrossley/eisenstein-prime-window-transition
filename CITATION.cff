@@ -5,7 +5,7 @@ abstract: "The exact transition near 4.49334142447806 for a weighted Eisenstein 
 authors:
   - family-names: Crossley
     given-names: Lee
-version: 1.0.3
+version: 1.0.4
 license: CC-BY-4.0
 repository-code: https://github.com/leecrossley/eisenstein-prime-window-transition
 type: software
