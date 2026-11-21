@@ -45,3 +45,11 @@ python3 verify-release.py
 ```
 
 The computations certify two zero brackets and positive coefficient bounds by independent routes. The exceptional-set and eventual-sign implications are written proofs. The approximation condition on the actual ordinates is an additional hypothesis. [Recorded checks](evidence/check.txt) [SHA-256 manifest](SHA256SUMS) [Latest release](https://github.com/leecrossley/eisenstein-critical-exceptions/releases/latest)
+
+## The continuous range at the exact cutoff
+
+The extension proves a strict lead for every real $7/b_K^2<y\le\exp(10^{1058})/b_K$ under the same two GRHs. Equality holds at the lower endpoint, where the first retained ideal norm meets the edge of the window. Direct enumeration covers $b_Ky\le500000$ unconditionally throughout the certified width enclosure. The full proof also gives arbitrarily late strict-lead intervals of log length greater than $2\cdot10^{1058}$. The eventual sign outside these ranges remains open. [Continuous range, certificate and replay](CUTOFF-RANGE.md) · [Recorded arithmetic checks](evidence/critical-range.txt)
+
+The correction oscillates, including at class-11 ordinary primes where the race has a strict lead. At a hypothetical exception the two twisted characters force a normalized 11-over-5 excess with leading constant $(\log3)/2$. This gives an explicit fourth-moment lower bound along any unbounded sequence of exceptional blocks. The extension also gives a spectral floor and stronger bounds on the size and spacing of exceptional sets. [Correction oscillation and zero conditions](CUTOFF-OSCILLATION.md) · [Forced excess and fourth moment](INERT-EXCESS.md) · [Spacing, floor and local shape](CUTOFF-SCALES.md)
+
+The companion result studies reciprocal prime weights and finite arithmetic expressions at stationary minima. The DOI above identifies the original exceptional-set paper. These extensions have their own tagged family release. [Prime-weight results](../stationary-prime-weights/) · [Cutoff extension release](https://github.com/leecrossley/eisenstein-prime-window-transition/releases/tag/critical-cutoff-v1.0.0)

@@ -1,0 +1,13 @@
+Conductor 4: both methods certify a sign change in the 220-decimal bracket.
+Conductor 12: both methods certify a sign change in the 220-decimal bracket.
+Completed zeta changes sign between heights 14 and 15 by both methods.
+Both integer checks give |q alpha-p| > 1/(400q) in 334 dyadic blocks through q = 3 * 10^100.
+The finite-range margin exceeds 10^-8/t^2; the absolute correction residue exceeds 1/100.
+Hardy signs and independent Euler sums certify 39 zero brackets below height 43.
+Both arithmetic evaluations give a strict lead after x=7/b through x=500000, checking 109123 successive knots and endpoints.
+The upper bounds for B from log x=13, 14, 19 and 32 are 2.76, 2.18, 0.74 and 0.115.
+The cosine certificate covers all five closed log intervals using 4460208 cells, with smallest width 1/256.
+The sine certificate covers all five closed log intervals using 8954956 cells, with smallest width 1/1024.
+Under the two stated GRHs the sign is strict on 7/b < x <= exp(10^100), and every class-11 prime through that upper bound has F_q^2 > B_q.
+Two evaluations certify twelve disjoint zero brackets and an odd combination with absolute value between 1.84875907e-1058 and 1.84875908e-1058.
+Under the two stated GRHs the race is strictly positive on 7/b < x <= exp(10^1058). No class-11 prime satisfies F_q^2 <= B_q through that bound. Further certified log intervals have length greater than 2*10^1058.

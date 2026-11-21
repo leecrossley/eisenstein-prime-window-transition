@@ -1,0 +1,2 @@
+A smooth positive maximum of B lies at 12503.33699 < y < 12503.33700. The direct tent gives 0.11519 < B < 0.11522 and the arithmetic product upper bound exceeds it by between 1.18e-6 and 1.20e-6.
+At that maximum 3.217 < F < 3.220 and 12.218 < F' < 12.221. The three signed prime-square jumps give mean density D/4.
